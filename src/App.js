@@ -4,6 +4,7 @@ import { darkTheme, lightTheme } from "./utils/Themes.js";
 import NavBar from "./components/NavBar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/SkillsSection";
+import Education from "./components/Education";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <Wrapper>
           <Skills />
+          <Education />
         </Wrapper>
       </Body>
     </ThemeProvider>

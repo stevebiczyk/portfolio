@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/SkillsSection";
 import Education from "./components/Education";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -31,14 +32,16 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={(darkTheme, lightTheme)}>
-      <NavBar />
-      <Body>
-        <Hero />
-        <Wrapper>
-          <Skills />
-          <Education />
-        </Wrapper>
-      </Body>
+      <Router>
+        <NavBar />
+        <Body>
+          <Hero />
+          <Wrapper>
+            <Skills />
+            <Education />
+          </Wrapper>
+        </Body>
+      </Router>
     </ThemeProvider>
   );
 }

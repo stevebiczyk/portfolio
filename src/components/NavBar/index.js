@@ -3,6 +3,8 @@ import React from "react";
 // import { NavLink } from "react-router-dom";
 import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
+import { DiCssdeck } from "react-icons/di";
+import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
   background: #000;
@@ -32,6 +34,11 @@ const NavLogo = styled(LinkR)`
     padding: 0 0px;
   }
 `;
+
+const Span = styled.div`
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: 18px;
 
 const NavContainer = styled.div`
   display: flex;

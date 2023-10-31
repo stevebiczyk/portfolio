@@ -99,6 +99,8 @@ const ButtonContainer = styled.div`
 `;
 
 const GitHubButton = styled.button`
+  background-color: transparent;
+  color: ${({ theme }) => theme.primary};
   border: 1.8px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
@@ -128,7 +130,11 @@ const NavBar = () => {
         <NavLogo>Logo</NavLogo>
         <MobileIcon></MobileIcon>
         <NavItems>
-          <NavLink>Home</NavLink>
+          <NavLink href="about">About</NavLink>
+          <NavLink href="skills">Skills</NavLink>
+          <NavLink href="experience">Experience</NavLink>
+          <NavLink href="education">Education</NavLink>
+          <NavLink href="projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton>GitHub Profile</GitHubButton>

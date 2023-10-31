@@ -127,8 +127,26 @@ const NavBar = () => {
   return (
     <Nav>
       <NavContainer>
-        <NavLogo>Logo</NavLogo>
-        <MobileIcon></MobileIcon>
+        <NavLogo to="/">
+          <a
+            style={{
+              display: "flex",
+              alignItems: "center",
+              color: "white",
+              marginBottom: "20;",
+              cursor: "pointer",
+            }}
+          >
+            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          </a>
+        </NavLogo>
+        <MobileIcon>
+          <FaBars
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
+        </MobileIcon>
         <NavItems>
           <NavLink href="about">About</NavLink>
           <NavLink href="skills">Skills</NavLink>

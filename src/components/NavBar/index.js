@@ -212,7 +212,9 @@ const NavBar = () => {
           <NavLink href="projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton>GitHub Profile</GitHubButton>
+          <GitHubButton href={GitHub} target="_blank">
+            GitHub Profile
+          </GitHubButton>
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>

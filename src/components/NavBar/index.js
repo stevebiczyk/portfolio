@@ -5,6 +5,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
+import { useTheme } from "styled-components";
 
 const Nav = styled.div`
   background: #000;
@@ -36,9 +37,10 @@ const NavLogo = styled(LinkR)`
 `;
 
 const Span = styled.div`
-    padding: 0 4px;
-    font-weight: bold;
-    font-size: 18px;
+  padding: 0 4px;
+  font-weight: bold;
+  font-size: 18px;
+`;
 
 const NavContainer = styled.div`
   display: flex;
@@ -130,7 +132,54 @@ const GitHubButton = styled.button`
   }
 `;
 
+const MobileMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.card_light + 99};
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(0)" : "translateY(-100%)"};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+`;
+
+const MobileMenuItems = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+`;
+
+const MobileMenuLink = styled(LinkR)`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
+
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
+`;
+
 const NavBar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Nav>
       <NavContainer>
@@ -164,6 +213,62 @@ const NavBar = () => {
         <ButtonContainer>
           <GitHubButton>GitHub Profile</GitHubButton>
         </ButtonContainer>
+        {isOpen && (
+          <MobileMenu isOpen={isOpen}>
+            <MobileMenuLink
+              href="#about"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              About
+            </MobileMenuLink>
+            <MobileMenuLink
+              href="#skills"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Skills
+            </MobileMenuLink>
+            <MobileMenuLink
+              href="#experience"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Experience
+            </MobileMenuLink>
+            <MobileMenuLink
+              href="#projects"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Projects
+            </MobileMenuLink>
+            <MobileMenuLink
+              href="#education"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Education
+            </MobileMenuLink>
+            <GitHubButton
+              style={{
+                padding: "10px 16px",
+                background: `${theme.primary}`,
+                color: "white",
+                width: "max-content",
+              }}
+              href={GitHub}
+              target="_blank"
+            >
+              Github Profile
+            </GitHubButton>
+          </MobileMenu>
+        )}
       </NavContainer>
     </Nav>
   );

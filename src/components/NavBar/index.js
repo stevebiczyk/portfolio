@@ -180,6 +180,7 @@ const MobileMenuLink = styled(LinkR)`
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const theme = useTheme();
   return (
     <Nav>
       <NavContainer>

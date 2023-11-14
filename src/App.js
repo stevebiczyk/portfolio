@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import NavBar from "./components/NavBar";
 import Hero from "./components/HeroSection";
-import Skills from "./components/SkillsSection";
+import Skills from "./components/Skills";
 import Education from "./components/Education";
 import { BrowserRouter as Router } from "react-router-dom";
 

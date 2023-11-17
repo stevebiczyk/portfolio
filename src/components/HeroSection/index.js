@@ -232,7 +232,7 @@ const Hero = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="display">
-              Check Resume
+              My Resume
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

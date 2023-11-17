@@ -6,9 +6,9 @@ import styled from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
+import { Bio } from "../../data/constants";
 
 const Nav = styled.div`
-  background: #000;
   background-color: ${({ theme }) => theme.card_light};
   height: 80px;
   display: flex;
@@ -212,8 +212,8 @@ const NavBar = () => {
           <NavLink href="projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={GitHub} target="_blank">
-            GitHub Profile
+          <GitHubButton href={Bio.github} target="_blank">
+            Github Profile
           </GitHubButton>
         </ButtonContainer>
         {isOpen && (

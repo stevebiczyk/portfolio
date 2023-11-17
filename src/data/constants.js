@@ -1,16 +1,15 @@
 export const Bio = {
   name: "Istvan Biczyk",
   roles: [
-    "Full Stack Developer",
-    "Android Developer",
-    "UI/UX Designer",
-    "Programmer",
+    "Full Stack Web Developer",
+    // "Android Developer",
+    // "UI/UX Designer",
+    // "Programmer",
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. I have a passion for learning new skills and I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/stevebiczyk",
-  resume:
-    "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
+  resume: "https://1drv.ms/b/s!ArCEvf29gCH3gkwXqAQlWdK6WcEb?e=dubv6U",
   linkedin: "https://www.linkedin.com/in/istvan-biczyk/",
   twitter: "https://twitter.com/BiczykSteve",
 };
@@ -101,31 +100,31 @@ export const skills = [
       },
     ],
   },
-  {
-    title: "Android",
-    skills: [
-      {
-        name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },
-      {
-        name: "Kotlin",
-        image:
-          "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-      },
-      {
-        name: "XML",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-      },
-      {
-        name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Android",
+  //   skills: [
+  //     {
+  //       name: "Java",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+  //     },
+  //     {
+  //       name: "Kotlin",
+  //       image:
+  //         "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+  //     },
+  //     {
+  //       name: "XML",
+  //       image:
+  //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
+  //     },
+  //     {
+  //       name: "Android Studio",
+  //       image:
+  //         "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Others",
     skills: [

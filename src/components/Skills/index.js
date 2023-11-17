@@ -122,7 +122,7 @@ const Skills = () => {
         <Title>Skills</Title>
         <Description>
           Here are some of my skills on which I have been working on the last
-          twoo years.
+          two years.
         </Description>
         <SkillsContainer>
           {skills.map((skill) => (

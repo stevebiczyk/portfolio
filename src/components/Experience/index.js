@@ -91,6 +91,7 @@ const index = () => {
                   )}
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  Here are some of the projects I worked on:
                   <ExperienceCard experience={experience} />
                 </TimelineContent>
               </TimelineItem>

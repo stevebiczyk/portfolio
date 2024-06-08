@@ -38,8 +38,9 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   font-size: 18px;
+  font-weight: 500;
   text-align: center;
-  max-width: 600px;
+  /* max-width: 600px; */
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;

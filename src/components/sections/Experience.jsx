@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { experiences } from "../../data/constants";
+import { experiences } from "../../data/contents";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import ExperienceCard from "../cards/ExperienceCard";
+import ExperienceCard from "../Cards/ExperienceCard";
 
 const Container = styled.div`
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -60,8 +60,8 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+          My work experience as a software engineer and web developer, working
+          on different projects.
         </Desc>
 
         <VerticalTimeline>

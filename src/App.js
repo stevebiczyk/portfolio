@@ -3,9 +3,9 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import NavBar from "./components/NavBar";
 import Hero from "./components/HeroSection";
-import Skills from "./components/Skills";
+import Skills from "./components/sections/Skills.jsx";
 import Education from "./components/Education";
-import Experience from "./components/Experience";
+import Experience from "./components/sections/Experience.jsx";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`

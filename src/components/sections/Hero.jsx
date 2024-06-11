@@ -162,19 +162,18 @@ const ResumeButton = styled.a`
   font-weight: 600;
   font-size: 20px;
 
-     &:hover {
-        transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
-    color: white;
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+  color: white;
 `;
 
 const Img = styled.img`
@@ -250,13 +249,13 @@ const Hero = () => {
               </motion.div>
 
               <ResumeButton href={Bio.resume} target="_blank">
-                Check Resume
+                See My Resume
               </ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
+                  <Img src={HeroImg} alt="Istvan Biczyk" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>

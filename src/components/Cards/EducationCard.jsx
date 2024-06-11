@@ -32,7 +32,7 @@ const Name = styled.div`
     font-size: 14px;
   }
 `;
-const Degree = styled.div`
+const Qual = styled.div`
   font-size: 14px;
   font-weight: 500px;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -104,7 +104,7 @@ const EducationCard = ({ education }) => {
         <Image src={education.img} />
         <Body>
           <Name>{education.school}</Name>
-          <Degree>{education.degree}</Degree>
+          <Qual>{education.qual}</Qual>
           <Date>{education.date}</Date>
         </Body>
       </Top>

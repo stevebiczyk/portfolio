@@ -529,6 +529,6 @@ export const TimeLineData = [
     text: "Completed my Diploma at the Barhacs Study and Exam Centre",
   },
   { year: 2004, text: "Worked as IT Support Technician" },
-  { year: 2020, text: "Completed my Diploma at the Code Institute" },
-  { year: 2021, text: "Worked as a freelance web developer" },
+  { year: 2023, text: "Completed my Diploma at the Code Institute" },
+  { year: 2024, text: "Worked as a freelance web developer" },
 ];

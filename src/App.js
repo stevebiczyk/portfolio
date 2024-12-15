@@ -1,14 +1,15 @@
 import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
-import NavBar from "./components/sections/NavBar.jsx";
-import Hero from "./components/sections/Hero";
-import Skills from "./components/sections/Skills";
-import Education from "./components/sections/Education";
-import Experience from "./components/sections/Experience";
-import Projects from "./components/sections/Projects.jsx";
-import Contact from "./components/sections/Contact.jsx";
-import Footer from "./components/sections/Footer.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import HeroSection from "./components/HeroSection/HeroSection";
+import Skills from "./components/Skills/Skills";
+import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects.jsx";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+import Contact from "./components/Contact/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`
@@ -39,12 +40,18 @@ function App() {
       <Router>
         <NavBar />
         <Body>
-          <Hero />
+          <HeroSection />
           <Wrapper>
             <Skills />
             <Experience />
-            <Education />
           </Wrapper>
+          <Projects />
+          <Wrapper>
+            <Education />
+            <Contact />
+          </Wrapper>
+          <Footer />
+          <ProjectDetails />
         </Body>
       </Router>
     </ThemeProvider>

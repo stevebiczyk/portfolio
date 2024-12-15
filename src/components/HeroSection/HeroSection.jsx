@@ -214,7 +214,7 @@ const HeroBg = styled.div`
   }
 `;
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <div id="About">
       <HeroContainer>
@@ -266,4 +266,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

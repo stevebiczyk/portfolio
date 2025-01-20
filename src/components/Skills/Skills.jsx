@@ -115,7 +115,6 @@ const SkillImage = styled.img`
   width: 24px;
   height: 24px;
 `;
-
 const Skills = () => {
   return (
     <Container id="skills">
@@ -126,12 +125,12 @@ const Skills = () => {
           last two years.
         </Description>
         <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
+          {skills.map((skillGroup, index) => (
+            <Skill key={skillGroup.title || index}>
+              <SkillTitle>{skillGroup.title}</SkillTitle>
               <SkillList>
-                {skill.skills.map((skill) => (
-                  <SkillItem>
+                {skillGroup.skills.map((skill, skillIndex) => (
+                  <SkillItem key={skill.name || skillIndex}>
                     <SkillImage src={skill.image} />
                     {skill.name}
                   </SkillItem>
@@ -146,3 +145,34 @@ const Skills = () => {
 };
 
 export default Skills;
+
+// const Skills = () => {
+//   return (
+//     <Container id="skills">
+//       <Wrapper>
+//         <Title>Skills</Title>
+//         <Description>
+//           Here are some of my skills on which I have been working on for the
+//           last two years.
+//         </Description>
+//         <SkillsContainer>
+//           {skills.map((skill) => (
+//             <Skill>
+//               <SkillTitle>{skill.title}</SkillTitle>
+//               <SkillList>
+//                 {skill.skills.map((skill) => (
+//                   <SkillItem>
+//                     <SkillImage src={skill.image} />
+//                     {skill.name}
+//                   </SkillItem>
+//                 ))}
+//               </SkillList>
+//             </Skill>
+//           ))}
+//         </SkillsContainer>
+//       </Wrapper>
+//     </Container>
+//   );
+// };
+
+// export default Skills;

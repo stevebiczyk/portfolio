@@ -94,6 +94,11 @@ const ItemWrapper = styled.div`
   gap: 8px;
 `;
 
+// import React from "react";
+// import { VerticalTimelineElement } from "react-vertical-timeline-component";
+// Assuming you have your styled components imported here as well:
+// import { Top, Image, Body, Role, Company, Date, Description, Span, Skills, ItemWrapper, Skill } from "./styledComponents";
+
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -113,7 +118,6 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fff",
         boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-        // backdropFilter: "blur(3px) saturate(106%)",
         backgroundColor: "rgba(17, 25, 40, 0.83)",
         border: "1px solid rgba(255, 255, 255, 0.125)",
         borderRadius: "6px",
@@ -131,16 +135,19 @@ const ExperienceCard = ({ experience }) => {
           <Date>{experience.date}</Date>
         </Body>
       </Top>
+
       <Description>
         {experience?.desc && <Span>{experience?.desc}</Span>}
+
         {experience?.skills && (
           <>
             <br />
             <Skills>
               <b>Skills:</b>
               <ItemWrapper>
-                {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
+                {experience.skills.map((skill, index) => (
+                  // Add a unique key here
+                  <Skill key={index}>• {skill}</Skill>
                 ))}
               </ItemWrapper>
             </Skills>

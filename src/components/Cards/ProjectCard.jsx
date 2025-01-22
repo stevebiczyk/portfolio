@@ -1,6 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
+const Button = styled.button`
+  display: none;
+  width: 100%;
+  padding: 10px;
+  background-color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.text_black};
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+`;
+
 const Card = styled.div`
   width: 330px;
   height: 490px;
@@ -18,6 +32,9 @@ const Card = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
+  }
+  &:hover ${Button} {
+    display: block;
   }
 `;
 const Image = styled.img`
@@ -96,20 +113,20 @@ const Avatar = styled.img`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid ${({ theme }) => theme.card};
 `;
-const Button = styled.a`
-  color: ${({ theme }) => theme.primary};
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-`;
+// const Button = styled.a`
+//   color: ${({ theme }) => theme.primary};
+//   text-decoration: none;
+//   font-weight: 600;
+//   text-align: center;
+// `;
 
-const ProjectCard = ({ project, setOpenModal }) => {
+const ProjectCards = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={project?.image} />
       <Tags>
         {project?.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
+          <Tag key={index}>{tag}</Tag>
         ))}
       </Tags>
       <Details>
@@ -118,12 +135,13 @@ const ProjectCard = ({ project, setOpenModal }) => {
         <Description>{project?.description}</Description>
       </Details>
       <Members>
-        {project?.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project?.member?.map((member, index) => (
+          <Avatar key={index} src={member.img} />
         ))}
       </Members>
+      {/* <Button>View Project</Button> */}
     </Card>
   );
 };
 
-export default ProjectCard;
+export default ProjectCards;

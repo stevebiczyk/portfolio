@@ -184,6 +184,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
   return (
     <Modal
+      // open={openModal.state}
       open={true}
       onClose={() => setOpenModal({ state: false, project: null })}
     >

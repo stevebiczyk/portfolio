@@ -119,31 +119,7 @@ export const skills = [
       },
     ],
   },
-  // {
-  //   title: "Android",
-  //   skills: [
-  //     {
-  //       name: "Java",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-  //     },
-  //     {
-  //       name: "Kotlin",
-  //       image:
-  //         "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-  //     },
-  //     {
-  //       name: "XML",
-  //       image:
-  //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-  //     },
-  //     {
-  //       name: "Android Studio",
-  //       image:
-  //         "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-  //     },
-  //   ],
-  // },
+
   {
     title: "Others",
     skills: [
@@ -201,8 +177,8 @@ export const experiences = [
     img: "",
     role: "Freelance Full Stack Developer",
     company: "",
-    date: "Aug 2023 - July 2023",
-    desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+    date: "Aug 2023 - Present Day",
+    desc: "Working on Full Stack and Front End projects for  various clients",
     skills: [
       "Docker",
       "Terraform",
@@ -353,7 +329,7 @@ export const projects = [
       "Redux",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
+    github: "https://github.com/stevebiczyk",
     webapp: "https://trackify.duckdns.org",
   },
   {
@@ -366,14 +342,14 @@ export const projects = [
       "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
+    github: "https://github.com/stevebiczyk",
     webapp: "https://podstream.netlify.app/",
     member: [
       {
-        name: "Rishav Chanda",
+        name: "Istvan Biczyk",
         img: "https://avatars.githubusercontent.com/u/64485885?v=4",
         linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
+        github: "https://github.com/stevebiczyk",
       },
       {
         name: "Upasana Chaudhuri",

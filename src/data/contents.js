@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. I have a passion for learning new skills and I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/stevebiczyk",
-  resume: "https://1drv.ms/b/s!ArCEvf29gCH3gkwXqAQlWdK6WcEb?e=dubv6U",
+  cv: "https://1drv.ms/b/s!ArCEvf29gCH3gkwXqAQlWdK6WcEb?e=dubv6U",
   linkedin: "https://www.linkedin.com/in/istvan-biczyk/",
   twitter: "https://twitter.com/BiczykSteve",
 };
@@ -152,11 +152,11 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-      // {
-      //   name: "Postman",
-      //   image:
-      //     "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      // },
+      {
+        name: "Postman",
+        image:
+          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+      },
       // {
       //   name: "Adobe XD",
       //   image:
@@ -180,27 +180,6 @@ export const experiences = [
     date: "Aug 2023 - Present Day",
     desc: "Working on Full Stack and Front End projects for  various clients",
     skills: [
-      "Docker",
-      "Terraform",
-      "AWS",
-      "EC2",
-      "Portainer",
-      "Nginx",
-      "JavaScript",
-      "TypeScript",
-      "Node Js",
-      " Next Js",
-    ],
-    doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-  },
-  {
-    id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-    role: "Frontend Engineer Intern",
-    company: "Neurobit",
-    date: "June 2023 - Present",
-    desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-    skills: [
       "ReactJS",
       "Redux",
       "NodeJs",
@@ -209,8 +188,26 @@ export const experiences = [
       "CSS",
       "JavaScript",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+    doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
+  // {
+  //   id: 0,
+  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
+  //   role: "Frontend Engineer Intern",
+  //   company: "Neurobit",
+  //   date: "June 2023 - Present",
+  //   desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
+  //   skills: [
+  //     "ReactJS",
+  //     "Redux",
+  //     "NodeJs",
+  //     "Material UI",
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //   ],
+  //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+  // },
   // {
   //   id: 1,
   //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
@@ -279,7 +276,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+    img: "https://codeinstitute.net/wp-content/themes/codeinstitute/img/svg/Code_logo_grey_fit.svg",
     school: "The Code Institute, Dublin, Ireland",
     date: "July 2022 - August 2023",
     grade: "Pass",
@@ -288,45 +285,43 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Barhacs Study and Exam Centre, Budapes",
+    img: "https://barhacs.hu/wp-content/uploads/2024/11/BARHACS_Oktatokozpont-feher.png",
+    school: "Barhacs & Co Education and Exam Centre, Budapest",
     date: "Sept 2001 - Feb 2003",
     grade: "Pass with Merit",
-    desc: "Higher National Diploma in Software Development and Computer Studies",
+    desc: "I completed my higher education at Barhacs & Co Education and Exam Centre, where I studied software development and computer studies. I graduated with a grade of Pass with Merit.",
     qual: "Higher National Diploma in Software Development and Computer Studies",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+    img: "https://petrik.hu/wp-content/uploads/2020/08/logo-nagy.png",
     school: "Petrik Lajos High School of Chemistry, Budapest",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    qual: "ICSC(X), Science with Computer",
+    date: "Sept 1992 - June 1997",
+    grade: "Pass",
+    desc: "I completed my middle education at Petrik Lajos High School of Chemistry, where I studied chemistry, biology, physics, mathematics, and computer science. I graduated with a grade of Pass.",
+    qual: "High School Diploma",
   },
 ];
 
 export const projects = [
   {
-    id: 9,
+    id: 0,
     title: "Crown Clothing",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "Crown Clothing is a web application that allows users to browse and purchase clothing items. The application is built using React JS, Redux, Firebase, and Stripe. Users can sign in with their Google account, add items to their cart, and make payments using Stripe. The application is fully responsive and provides a seamless user experience across all devices.",
     image:
       "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
+      "JavaScript",
+      "TypeScript",
       "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
       "Redux",
+      "Tanstack",
+      "GraphQl",
+      "Jest",
+      "Stripe",
+      "Firebase",
     ],
     category: "web app",
     github: "https://github.com/stevebiczyk",

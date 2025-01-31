@@ -130,7 +130,7 @@ const SubTitle = styled.div`
   }
 `;
 
-const ResumeButton = styled.a`
+const CVButton = styled.a`
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -248,9 +248,9 @@ const HeroSection = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
-                See My Resume
-              </ResumeButton>
+              <CVButton href={Bio.cv} target="_blank">
+                See My CV
+              </CVButton>
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>

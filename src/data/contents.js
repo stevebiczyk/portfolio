@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. I have a passion for learning new skills and I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/stevebiczyk",
-  cv: "https://1drv.ms/b/s!ArCEvf29gCH3gkwXqAQlWdK6WcEb?e=dubv6U",
+  cv: "https://drive.google.com/file/d/1SwBfqpUvr9UCDF4_2SDeP63sP8Di4RKz/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/istvan-biczyk/",
   twitter: "https://twitter.com/BiczykSteve",
 };
@@ -329,6 +329,52 @@ export const projects = [
   },
   {
     id: 0,
+    title: "Crown Clothing",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "Crown Clothing is a web application that allows users to browse and purchase clothing items. The application is built using React JS, Redux, Firebase, and Stripe. Users can sign in with their Google account, add items to their cart, and make payments using Stripe. The application is fully responsive and provides a seamless user experience across all devices.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "React Js",
+      "Redux",
+      "Tanstack",
+      "GraphQl",
+      "Jest",
+      "Stripe",
+      "Firebase",
+    ],
+    category: "web app",
+    github: "https://github.com/stevebiczyk",
+    webapp: "https://trackify.duckdns.org",
+  },
+  {
+    id: 0,
+    title: "Crown Clothing",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "Crown Clothing is a web application that allows users to browse and purchase clothing items. The application is built using React JS, Redux, Firebase, and Stripe. Users can sign in with their Google account, add items to their cart, and make payments using Stripe. The application is fully responsive and provides a seamless user experience across all devices.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "React Js",
+      "Redux",
+      "Tanstack",
+      "GraphQl",
+      "Jest",
+      "Stripe",
+      "Firebase",
+    ],
+    category: "web app",
+    github: "https://github.com/stevebiczyk",
+    webapp: "https://trackify.duckdns.org",
+  },
+  {
+    id: 1,
     title: "RecipeShare",
     date: "Apr 2023 - May 2023",
     description:
